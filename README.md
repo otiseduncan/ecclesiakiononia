@@ -1,4 +1,5 @@
 # The Forgotten Books of Eden - Modern Digital Edition
+*Part of the Ecclesia Koinonia Project*
 
 A modern, responsive website presenting the complete collection of "The Forgotten Books of Eden" edited by Rutherford H. Platt, Jr. (1926). This digital edition transforms the original Sacred Texts Archive HTML files into a clean, readable, and accessible format for contemporary readers.
 
