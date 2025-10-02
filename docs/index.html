@@ -3,128 +3,347 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Forgotten Books of Eden - Sacred Texts Collection</title>
-    <meta name="description" content="A modern, readable collection of The Forgotten Books of Eden, featuring ancient texts including the Books of Adam and Eve, Enoch, Solomon, and the Twelve Patriarchs.">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Ecclesia Koinonia - Sacred Texts & Christian Fellowship</title>
+    <meta name="description" content="Ecclesia Koinonia - A digital sanctuary for sacred texts, Christian fellowship, and spiritual resources. Featuring The Forgotten Books of Eden and other ancient sacred writings.">
+    <meta name="keywords" content="Ecclesia Koinonia, Christian fellowship, sacred texts, ancient writings, Forgotten Books of Eden, biblical texts, spiritual resources">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ecclesia Koinonia - Sacred Texts & Christian Fellowship">
+    <meta property="og:description" content="A digital sanctuary for sacred texts and Christian fellowship">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://otiseduncan.github.io/ecclesiakiononia/">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛪</text></svg>">
 </head>
 <body>
-    <header class="header">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <h1>The Forgotten Books of Eden</h1>
-            <p>Ancient Sacred Texts - Edited by Rutherford H. Platt, Jr. (1926)</p>
-        </div>
-    </header>
-
-    <nav class="nav">
-        <div class="container">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#books">Books</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
+            <div class="nav-brand">
+                <h1 class="brand-title">Ecclesia Koinonia</h1>
+                <p class="brand-subtitle">church fellowship</p>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#library" class="nav-link">Library</a>
+                <a href="#prayer" class="nav-link">Prayer</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
         </div>
     </nav>
 
-    <main class="main">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
         <div class="container">
-            <section id="home">
-                <div class="search-container">
-                    <input type="text" id="search" class="search-input" placeholder="Search books and content...">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Welcome to<br>
+                    <span class="hero-highlight">Ecclesia Koinonia</span>
+                </h1>
+                <p class="hero-description">
+                    A Christian community dedicated to worship, fellowship, and spiritual growth. 
+                    Join us in our mission to spread God's love through service, prayer, and 
+                    the study of His Word.
+                </p>
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary">Join Our Services</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Ecclesia Koinonia</h2>
+                <p class="section-subtitle">
+                    A church community rooted in love, faith, and service
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>
+                        Ecclesia Koinonia (Greek: ἐκκλησία κοινωνία) means "church fellowship" - 
+                        a sacred gathering of believers united in Christ. We are a community 
+                        dedicated to worship, discipleship, and serving others in the love of Jesus.
+                    </p>
+                    <p>
+                        Our mission is to create a welcoming space where people can encounter God, 
+                        grow in faith, and discover their purpose in His kingdom. We believe in 
+                        the power of community, the importance of scripture, and the call to serve.
+                    </p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon">✝️</div>
+                            <div class="feature-content">
+                                <h4>Worship</h4>
+                                <p>Celebrating God through music, prayer, and scripture</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🤝</div>
+                            <div class="feature-content">
+                                <h4>Fellowship</h4>
+                                <p>Building authentic relationships in Christ</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">❤️</div>
+                            <div class="feature-content">
+                                <h4>Service</h4>
+                                <p>Serving our community with God's love</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="reading-container" style="margin-bottom: 3rem;">
-                    <h2>Welcome to The Forgotten Books of Eden</h2>
-                    <p>This collection contains ancient sacred texts that were not included in the canonical Bible but have been preserved through the centuries. These writings provide fascinating insights into early religious thought and the cultural context of biblical times.</p>
-                    
-                    <p>Originally edited by Rutherford H. Platt, Jr. in 1926, these texts include apocryphal and pseudepigraphal works that influenced early Christian and Jewish communities. The collection features stories that expand upon biblical narratives and provide additional context for understanding ancient religious traditions.</p>
-                    
-                    <p>Each book has been carefully formatted for modern reading while preserving the authentic content and meaning of these ancient texts.</p>
-                </div>
-            </section>
-
-            <section id="books">
-                <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">The Collection</h2>
-                <div class="books-grid">
-                    <div class="book-card">
-                        <h2>The First Book of Adam and Eve</h2>
-                        <p>The story of Adam and Eve after their expulsion from Eden, including their trials, temptations, and the birth of Cain and Abel.</p>
-                        <a href="books/first_book_adam_eve.html" class="btn">Read Now</a>
-                    </div>
-                    
-                    <div class="book-card">
-                        <h2>The Second Book of Adam and Eve</h2>
-                        <p>Continuation of the Adam and Eve narrative, covering the patriarchs who lived before the Flood.</p>
-                        <a href="books/second_book_adam_eve.html" class="btn">Read Now</a>
-                    </div>
-                    
-                    <div class="book-card">
-                        <h2>The Book of the Secrets of Enoch</h2>
-                        <p>The mystical journey of Enoch through the heavens and his revelations about divine mysteries.</p>
-                        <a href="books/secrets_enoch.html" class="btn">Read Now</a>
-                    </div>
-                    
-                    <div class="book-card">
-                        <h2>The Psalms of Solomon</h2>
-                        <p>A collection of eighteen psalms attributed to King Solomon, reflecting on righteousness and divine judgment.</p>
-                        <a href="books/psalms_solomon.html" class="btn">Read Now</a>
-                    </div>
-                    
-                    <div class="book-card">
-                        <h2>The Odes of Solomon</h2>
-                        <p>Forty-two mystical odes expressing deep spiritual truths and early Christian thought.</p>
-                        <a href="books/odes_solomon.html" class="btn">Read Now</a>
-                    </div>
-                    
-                    <div class="book-card">
-                        <h2>The Letter of Aristeas</h2>
-                        <p>The account of how the Hebrew scriptures were translated into Greek (the Septuagint).</p>
-                        <a href="books/letter_aristeas.html" class="btn">Read Now</a>
-                    </div>
-                    
-                    <div class="book-card">
-                        <h2>The Fourth Book of Maccabees</h2>
-                        <p>A philosophical discourse on the supremacy of devout reason over the passions.</p>
-                        <a href="books/fourth_maccabees.html" class="btn">Read Now</a>
-                    </div>
-                    
-                    <div class="book-card">
-                        <h2>The Story of Ahikar</h2>
-                        <p>The tale of Ahikar, a wise counselor, and his ungrateful nephew Nadan.</p>
-                        <a href="books/story_ahikar.html" class="btn">Read Now</a>
-                    </div>
-                    
-                    <div class="book-card">
-                        <h2>The Testaments of the Twelve Patriarchs</h2>
-                        <p>The final words and teachings of the twelve sons of Jacob to their descendants.</p>
-                        <a href="books/testaments_patriarchs.html" class="btn">Read Now</a>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-content">
+                            <div class="placeholder-icon">⛪</div>
+                            <p>Come As You Are</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <section id="about" style="margin-top: 4rem;">
-                <div class="reading-container">
-                    <h2>About This Collection</h2>
-                    <p>The Forgotten Books of Eden represents one of the most important collections of ancient religious texts outside the canonical Bible. These works, compiled and translated by various scholars, offer unique insights into the religious and cultural milieu of ancient times.</p>
-                    
-                    <p>This modern digital edition preserves the complete text while presenting it in a clean, readable format optimized for contemporary readers. The original 1926 edition by Rutherford H. Platt, Jr. has been carefully converted to provide an enhanced reading experience while maintaining scholarly accuracy.</p>
-                    
-                    <h3>Historical Context</h3>
-                    <p>These texts come from various sources and time periods, representing the rich diversity of ancient religious literature. Many were known to early Christian communities and influenced the development of religious thought, even though they were not included in the final biblical canon.</p>
-                    
-                    <h3>Modern Presentation</h3>
-                    <p>This website presents the texts with modern typography, responsive design, and enhanced navigation to make these ancient works accessible to today's readers. Each book includes chapter navigation and the full original content.</p>
-                </div>
-            </section>
+            </div>
         </div>
-    </main>
+    </section>
 
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Join Us for Worship</h2>
+                <p class="section-subtitle">
+                    Experience meaningful worship in a welcoming community
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">☀️</div>
+                    <h3>Saturday Service</h3>
+                    <div class="service-time">12:00 PM</div>
+                    <p>Join us for our main worship service featuring music, teaching, and fellowship.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Live Music</span>
+                        <span class="feature-tag">Biblical Teaching</span>
+                        <span class="feature-tag">Fellowship</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🌙</div>
+                    <h3>Wednesday Evening Study</h3>
+                    <div class="service-time">Coming Soon</div>
+                    <p>Deep dive into God's Word with our mid-week Bible study and prayer time.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Bible Study</span>
+                        <span class="feature-tag">Prayer</span>
+                        <span class="feature-tag">Discussion</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family Events</h3>
+                    <div class="service-time">Coming Soon</div>
+                    <p>Special events designed to bring families together in faith and fun.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">All Ages</span>
+                        <span class="feature-tag">Community</span>
+                        <span class="feature-tag">Fellowship</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-info">
+                <div class="info-card">
+                    <h4>📍 Location</h4>
+                    <p>We meet online and in homes throughout our community. Contact us for current meeting locations.</p>
+                </div>
+                <div class="info-card">
+                    <h4>👋 First Time?</h4>
+                    <p>Welcome! Come as you are - no dress code, just open hearts. We'd love to meet you after service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Library Section -->
+    <section class="library" id="library">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ecclesia Library</h2>
+                <p class="section-subtitle">
+                    Discover spiritual resources for growth and study
+                </p>
+            </div>
+            
+            <div class="library-grid">
+                <div class="library-card featured-collection">
+                    <div class="library-icon">📚</div>
+                    <h3>The Forgotten Books of Eden</h3>
+                    <p>Ancient sacred texts including the Books of Adam and Eve, Enoch, Solomon, and the Twelve Patriarchs.</p>
+                    <div class="library-stats">
+                        <span class="stat-badge">9 Books</span>
+                        <span class="stat-badge">290+ Chapters</span>
+                    </div>
+                    <a href="library.html" class="btn btn-primary">Explore Collection</a>
+                </div>
+                
+                <div class="library-card">
+                    <div class="library-icon">📖</div>
+                    <h3>Bible Study Resources</h3>
+                    <p>Commentaries, study guides, and teaching materials to deepen your understanding of scripture.</p>
+                    <div class="library-status">Coming Soon</div>
+                </div>
+                
+                <div class="library-card">
+                    <div class="library-icon">🎵</div>
+                    <h3>Worship Resources</h3>
+                    <p>Hymns, contemporary worship songs, and musical resources for personal and corporate worship.</p>
+                    <div class="library-status">Coming Soon</div>
+                </div>
+                
+                <div class="library-card">
+                    <div class="library-icon">🙏</div>
+                    <h3>Prayer & Devotionals</h3>
+                    <p>Daily devotions, prayer guides, and spiritual formation resources for your faith journey.</p>
+                    <div class="library-status">Coming Soon</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Section -->
+    <section class="prayer" id="prayer">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Prayer & Support</h2>
+                <p class="section-subtitle">
+                    We believe in the power of prayer and community support
+                </p>
+            </div>
+            
+            <div class="prayer-grid">
+                <div class="prayer-card">
+                    <div class="card-icon">🙏</div>
+                    <h3>Prayer Requests</h3>
+                    <p>Share your prayer needs with our community. We believe God hears and answers prayer.</p>
+                    <a href="#contact" class="btn btn-secondary">Submit Request</a>
+                </div>
+                
+                <div class="prayer-card">
+                    <div class="card-icon">💝</div>
+                    <h3>Support & Care</h3>
+                    <p>Our care team is here to support you through life's challenges with practical help and prayer.</p>
+                    <a href="#contact" class="btn btn-secondary">Get Support</a>
+                </div>
+                
+                <div class="prayer-card">
+                    <div class="card-icon">🤲</div>
+                    <h3>Giving & Donations</h3>
+                    <p>Support our ministry and mission through your generous giving. Every gift makes a difference.</p>
+                    <a href="#contact" class="btn btn-primary">Give</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>
+                        Have questions about our collections? Want to contribute to our mission? 
+                        We'd love to hear from you.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-content">
+                                <h4>Email</h4>
+                                <p>otiseduncan@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">🐙</div>
+                            <div class="method-content">
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/otiseduncan/ecclesiakiononia" target="_blank">otiseduncan/ecclesiakiononia</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 The Forgotten Books of Eden - Digital Edition</p>
-            <p>Original text in the public domain. Modern presentation and formatting.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Ecclesia Koinonia</h3>
+                    <p>Preserving sacred knowledge for future generations</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Worship</h4>
+                        <a href="#services">Services</a>
+                        <a href="#prayer">Prayer Requests</a>
+                        <a href="#contact">Visit Us</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="library.html">Ecclesia Library</a>
+                        <a href="#about">About Us</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ecclesia Koinonia. A community of faith, hope, and love.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
